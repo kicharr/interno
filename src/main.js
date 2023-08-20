@@ -6,9 +6,6 @@ import store from './store'
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 
-// Ready components lib imports
-import AntV from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.css';
 
 // Vue core objects imports
 import { createApp } from 'vue';
@@ -24,7 +21,7 @@ app.use(store);
 app.use(router);
 
 // using ready components lib AntD
-app.use(AntV);
+// app.use(AntV);
 
 // connecting Toast lib
 app.use(Toast, {

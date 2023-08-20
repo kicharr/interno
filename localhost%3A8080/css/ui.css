@@ -34,15 +34,15 @@
     font-weight: 600;
     line-height: 125%;
     letter-spacing: 0.01636rem;
-
     display: flex;
     padding: 1.18182rem 1.68182rem;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 0.45455rem;
-
     border-radius: 0.81818rem;
     background: #CDA274;
-    box-shadow: 0 0.455rem 0.909rem 0 #1F2022;
+    box-shadow: 0px 10px 20px 0px #1F2022;
 }
 
 

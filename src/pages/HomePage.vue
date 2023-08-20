@@ -137,6 +137,126 @@
           </div>
 
         </section>
+
+
+        <section class="reviews__wrapper container">
+          <div class="reviews-title__wrapper">
+            <h2>What the People Thinks <br>
+              About Us</h2>
+          </div>
+
+
+          <div class="reviews-cards__wrapper">
+            <div class="reviews-card">
+              <div class="reviews-user__info">
+                <div class="reviews-user__photo">
+                  <img src="../assets/home-page/reviews-user1.png">
+                </div>
+
+                <div class="reviews-user-data__wrapper">
+                  <p class="reviews-user__name">
+                    Nattasha Mith
+                  </p>
+                  <p class="reviews-user__place">
+                    Sydney, USA
+                  </p>
+                </div>
+              </div>
+              <div class="reviews-user__description">
+                <p class="reviews-user-description__text">
+                  Lorem Ipsum is simply dummy
+                  text of the typesetting industry.
+                  Ipsum has been.
+                </p>
+              </div>
+            </div>
+
+            <div class="reviews-card">
+              <div class="reviews-user__info">
+                <div class="reviews-user__photo">
+                  <img src="../assets/home-page/reviews-user2.png">
+                </div>
+
+                <div class="reviews-user-data__wrapper">
+                  <p class="reviews-user__name">
+                    Raymond Galario
+                  </p>
+                  <p class="reviews-user__place">
+                    Sydney, Australia
+                  </p>
+                </div>
+              </div>
+              <div class="reviews-user__description">
+                <p class="reviews-user-description__text">
+                  Lorem Ipsum is simply dummy
+                  text of the typesetting industry.
+                  Ipsum has been scrambled it
+                  to make a type book.
+                </p>
+              </div>
+            </div>
+
+            <div class="reviews-card">
+              <div class="reviews-user__info">
+                <div class="reviews-user__photo">
+                  <img src="../assets/home-page/reviews-user3.png">
+                </div>
+
+                <div class="reviews-user-data__wrapper">
+                  <p class="reviews-user__name">
+                    Benny Roll
+                  </p>
+                  <p class="reviews-user__place">
+                    Sydney, New York
+                  </p>
+                </div>
+              </div>
+              <div class="reviews-user__description">
+                <p class="reviews-user-description__text">
+                  Lorem Ipsum is simply dummy
+                  text of the typesetting industry.
+                  Ipsum has been scrambled.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="client-logo__wrapper container">
+          <ul class="client-logo__list">
+            <li>
+              <a href="#">
+                <img src="../assets/home-page/client-logo01.svg" alt="Client logo №1">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/home-page/client-logo02.svg" alt="Client logo №2">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/home-page/client-logo03.svg" alt="Client logo №3">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/home-page/client-logo04.svg" alt="Client logo №4">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/home-page/client-logo05.svg" alt="Client logo №5">
+              </a>
+            </li>
+          </ul>
+        </section>
+
+
+
+        <contact-form-footer></contact-form-footer>
+
       </div>
 
 
@@ -147,10 +267,11 @@
 <script>
 import MainHeaderComponent from "@/components/MainHeaderComponent.vue";
 import LinesLanding from "@/components/LinesLanding.vue";
+import ContactFormFooter from "@/components/ContactFormFooter.vue";
 
 export default {
   name: "HomePage",
-  components: {LinesLanding, MainHeaderComponent}
+  components: {ContactFormFooter, LinesLanding, MainHeaderComponent}
 }
 </script>
 
@@ -260,7 +381,7 @@ export default {
   opacity: .7;
 }
 
-/* CREATE WRAPPER */
+/* SECTION CREATE */
 
 .create-wrapper {
   display: flex;
@@ -295,7 +416,7 @@ export default {
 .create-info-description__text {
   color: #4D5053;
   line-height: 150%;
-  //letter-spacing: 0.00rem;
+//letter-spacing: 0.00rem;
 }
 
 .create-info-number__wrapper {
@@ -326,7 +447,99 @@ export default {
   font-size: 1rem;
   line-height: normal;
   letter-spacing: 0.01rem;
+}
 
+.create-wrapper {
+  margin-bottom: 9.09rem;
+}
+
+/* SECTION REVIEWS */
+.reviews__wrapper {
+  background-color: #F4F0EC;
+  padding: 4rem 1.14rem 4rem 1.09rem;
+  border-radius: 4.375rem;
+}
+
+.reviews-title__wrapper {
+  margin-bottom: 1.73rem;
+}
+
+.reviews-title__wrapper h2 {
+  text-align: center;
+  font-size: 2.27273rem;
+  line-height: 125%; /* 2.84091rem */
+  letter-spacing: 0.04545rem;
+}
+
+.reviews-cards__wrapper {
+  display: flex;
+}
+
+.reviews-card {
+  background-color: #FFFFFF;
+  padding: 2.41rem 1.18rem 2.45rem;
+  margin-right: 0.91rem;
+  border-radius: 1.5rem;
+
+  max-width: 390px;
+  width: 100%;
+}
+
+.reviews-card:last-child {
+  margin-right: 0;
+}
+
+.reviews-user__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.14rem;
+}
+
+.reviews-user__photo {
+  margin-right: 1.05rem;
+}
+
+.reviews-user__name {
+  color: #292F36;
+  font-family: "DM", serif;
+  font-size: 1.13636rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.70455rem */
+  letter-spacing: 0.01136rem;
+}
+
+.reviews-user__place {
+  color: #4D5053;
+  font-size: 0.81818rem;
+  line-height: 150%;
+  letter-spacing: 0.00818rem;
+}
+
+.reviews-user-description__text {
+  color: #4D5053;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: 0.01rem;
+}
+
+/* SECTION CLIENT */
+
+.client-logo__wrapper {
+  margin: 6.82rem auto 6.85rem;
+}
+
+.client-logo__list {
+  display: flex;
+  align-items: center;
+  gap: 4.91rem;
+}
+
+.client-logo__list li {
+  transition: all .3s linear;
+}
+
+.client-logo__list li:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 1052px) {
@@ -380,6 +593,53 @@ export default {
 
   .create-banner {
     margin: 0;
+  }
+
+  .reviews__wrapper {
+    border-radius: 2.375rem;
+  }
+
+  .reviews-cards__wrapper {
+    //display: flex;
+    flex-direction: column;
+  }
+
+  .client-logo__list {
+    flex-direction: column;
+  }
+
+  .reviews-title__wrapper h2 {
+    font-size: 1.27273rem;
+  }
+
+  .reviews-card {
+    margin-right: 0;
+    margin-bottom: 0.91rem;
+  }
+
+
+  .reviews-user__photo {
+    margin-right: 0.55rem;
+  }
+
+  .reviews-user__name {
+    font-size: 0.9rem;
+  }
+
+  .reviews-user__place {
+    font-size: 0.6rem;
+  }
+
+  .reviews-user-description__text {
+    font-size: 0.8rem;
+  }
+
+  .client-logo__wrapper {
+    margin: 4.82rem auto 4.85rem;
+  }
+
+  .client-logo__list {
+    gap: 3rem;
   }
 }
 

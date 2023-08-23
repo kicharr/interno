@@ -375,6 +375,9 @@
           </div>
         </section>
 
+        <!--SECTION COUNTER (COMPONENT)-->
+        <main-counter></main-counter>
+        <!--SECTION FORM ABOVE THE FOOTER (COMPONENT)-->
         <contact-form-footer></contact-form-footer>
 
       </div>
@@ -388,10 +391,11 @@
 import MainHeaderComponent from "@/components/MainHeaderComponent.vue";
 import LinesLanding from "@/components/LinesLanding.vue";
 import ContactFormFooter from "@/components/ContactFormFooter.vue";
+import MainCounter from "@/components/MainCounter.vue";
 
 export default {
   name: "HomePage",
-  components: {ContactFormFooter, LinesLanding, MainHeaderComponent}
+  components: {MainCounter, ContactFormFooter, LinesLanding, MainHeaderComponent}
 }
 </script>
 

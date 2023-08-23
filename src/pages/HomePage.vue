@@ -254,6 +254,126 @@
         </section>
 
 
+        <section class="projects__wrapper container">
+
+          <div class="title-center__wrapper">
+            <h2>
+              Follow Our Projects
+            </h2>
+            <p class="title-center__description">
+              It is a long established fact that a reader will be distracted by the of readable <br> content of page
+              lookings at its layouts points.
+            </p>
+          </div>
+          <div class="project-cards__wrapper">
+
+            <div class="project-card">
+              <div class="project-preview__wrapper">
+                <img src="../assets/home-page/Modern-Kitchan-1.png" alt="Modern Kitchen">
+
+                <div class="project-preview__modal">
+                  <p class="project-preview-modal__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse ac imperdiet ipsum, suscipit elementum neque. Cras sodales eros nec scelerisque
+                    tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                    egestas.
+                    <br> Vivamus in dolor venenatis, dictum lectus quis, mattis risus. Morbi auctor neque ante, volutpat
+                    molestie lacus luctus sit amet. Pellentesque id mollis massa, ut posuere nisl. Morbi euismod risus
+                    quam, et feugiat eros lacinia ac. Nulla lobortis ultricies libero sed lacinia.</p>
+                </div>
+              </div>
+
+              <div class="project-card-description__wrapper">
+                <div class="card-description__wrapper">
+                  <p class="project-card-title">Modern Kitchan</p>
+                  <p class="project-card-description">Decor / Artchitecture</p>
+                </div>
+                <div class="project-card-description__link">
+                  <a href="#" class="project-card-link">
+                    <img src="../assets/home-page/project-link.svg" alt="Link to project">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="project-card">
+              <div class="project-preview__wrapper">
+                <img src="../assets/home-page/Modern-Kitchan-2.png" alt="Modern Kitchen">
+
+                <div class="project-preview__modal">
+                  <p class="project-preview-modal__description">Integer suscipit laoreet egestas. Etiam ac ullamcorper
+                    dolor. Duis vulputate nisi et ipsum tincidunt sagittis. Praesent imperdiet ut eros nec bibendum. In
+                    lacinia lorem eget posuere tincidunt. Proin sed volutpat ligula. Praesent lectus mi, sodales a arcu
+                    quis, ullamcorper molestie arcu. Proin eu felis mi. </p>
+                </div>
+              </div>
+
+              <div class="project-card-description__wrapper">
+                <div class="card-description__wrapper">
+                  <p class="project-card-title">Modern Kitchan</p>
+                  <p class="project-card-description">Decor / Artchitecture</p>
+                </div>
+                <div class="project-card-description__link">
+                  <a href="#" class="project-card-link">
+                    <img src="../assets/home-page/project-link.svg" alt="Link to project">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="project-card">
+              <div class="project-preview__wrapper">
+                <img src="../assets/home-page/Modern-Kitchan-3.png" alt="Modern Kitchen">
+
+                <div class="project-preview__modal">
+                  <p class="project-preview-modal__description">Integer suscipit laoreet egestas. Etiam ac ullamcorper
+                    dolor. Duis vulputate nisi et ipsum tincidunt sagittis. Praesent imperdiet ut eros nec bibendum. In
+                    lacinia lorem eget posuere tincidunt. Proin sed volutpat ligula. Praesent lectus mi, sodales a arcu
+                    quis, ullamcorper molestie arcu. Proin eu felis mi. </p>
+                </div>
+              </div>
+
+              <div class="project-card-description__wrapper">
+                <div class="card-description__wrapper">
+                  <p class="project-card-title">Modern Kitchan</p>
+                  <p class="project-card-description">Decor / Artchitecture</p>
+                </div>
+                <div class="project-card-description__link">
+                  <a href="#" class="project-card-link">
+                    <img src="../assets/home-page/project-link.svg" alt="Link to project">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="project-card">
+              <div class="project-preview__wrapper">
+                <img src="../assets/home-page/Modern-Kitchan-4.png" alt="Modern Kitchen">
+
+                <div class="project-preview__modal">
+                  <p class="project-preview-modal__description">Quis autem vel eum iure reprehenderit qui in ea
+                    voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+                    nulla pariatur?</p>
+                </div>
+              </div>
+
+              <div class="project-card-description__wrapper">
+                <div class="card-description__wrapper">
+                  <p class="project-card-title">Modern Kitchan</p>
+                  <p class="project-card-description">Decor / Artchitecture</p>
+                </div>
+                <div class="project-card-description__link">
+                  <a href="#" class="project-card-link">
+                    <img src="../assets/home-page/project-link.svg" alt="Link to project">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
 
         <contact-form-footer></contact-form-footer>
 
@@ -542,6 +662,122 @@ export default {
   transform: scale(1.2);
 }
 
+.title-center__wrapper {
+  margin-bottom: 5.813rem;
+}
+
+.title-center__wrapper h2 {
+  color: #292F36;
+  text-align: center;
+  font-size: 2.27273rem;
+  line-height: 125%;
+  letter-spacing: 0.04545rem;
+  margin-bottom: 0.36rem;
+}
+
+.title-center__description {
+  color: #4D5053;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.01rem;
+}
+
+.project-cards__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 4.75rem;
+  grid-row-gap: 2.55rem;
+}
+
+.project-card {
+  max-width: 28.13636rem;
+  width: 100%;
+}
+
+.project-preview__wrapper {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 1.04rem;
+
+  overflow: hidden;
+}
+
+.project-preview__modal {
+  display: inline;
+
+  content: " ";
+
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: all .3s linear;
+
+//filter: blur(5px);
+}
+
+.project-preview-modal__description {
+  color: #000000;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.01rem;
+  padding: 25px;
+}
+
+.project-preview__wrapper img {
+  max-width: 28.13636rem;
+  width: 100%;
+  transition: all .3s linear;
+}
+
+.project-card-description__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.card-description__wrapper {
+  margin-right: auto;
+  transition: all .3s linear;
+}
+
+.project-card-title {
+  color: #292F36;
+  font-family: "DM", serif;
+  font-size: 1.13636rem;
+  line-height: 125%;
+  letter-spacing: 0.02273rem;
+  margin-bottom: 0.18rem;
+}
+
+.project-card-description {
+  color: #4D5053;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.01rem;
+}
+
+.project-card-link {
+  transition: all .3s linear;
+  will-change: transform;
+  display: inline-block;
+}
+
+.project-card:hover .project-card-link {
+//background-color: red; transform: rotate(-45deg);
+}
+
+.project-card:hover .project-preview__modal {
+  top: 0;
+}
+
+.project-card:hover .project-preview__wrapper img {
+  filter: blur(5px);
+}
+
 @media (max-width: 1052px) {
   .intro-wrapper__content {
     padding: 10.625rem 0.625rem 10.563rem;
@@ -600,8 +836,9 @@ export default {
   }
 
   .reviews-cards__wrapper {
-    //display: flex;
+    display: flex;
     flex-direction: column;
+
   }
 
   .client-logo__list {
@@ -640,6 +877,24 @@ export default {
 
   .client-logo__list {
     gap: 3rem;
+  }
+
+  .project-cards__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4.75rem;
+    grid-row-gap: 2.55rem;
+  }
+
+  .project-preview__modal {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .project-card:hover .project-preview__wrapper img {
+    filter: blur(0);
   }
 }
 

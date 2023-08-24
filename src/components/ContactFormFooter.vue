@@ -4,7 +4,7 @@
       Wanna join the interno?
     </p>
     <p class="contact-form-description">
-      It is a long established fact  will be distracted.
+      It is a long established fact will be distracted.
     </p>
     <button class="main-button__color">
       Contact With Us
@@ -17,71 +17,88 @@
 </template>
 
 <script>
-  export default {
-    name: 'ContactFormFooter'
-  }
+export default {
+  name: 'ContactFormFooter'
+}
 
 </script>
 
 <style scoped>
+.contact-form__wrapper {
+  padding: 3.64rem 14.32rem;
+  background-color: #292F36;
+  border-radius: 3.18182rem;
+  margin: 9.09rem auto;
+}
+
+.main-button__color {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  transition: all .3s linear;
+  margin: 0 auto;
+}
+
+.main-button__color:hover {
+  opacity: .7;
+}
+
+path {
+  stroke: #292F36;
+}
+
+.contact-form-title {
+  color: #FFF;
+  text-align: center;
+  font-family: "DM", serif;
+  font-size: 2.27273rem;
+  line-height: 125%; /* 2.84091rem */
+
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-description {
+  color: #FFF;
+  text-align: center;
+  line-height: 150%;
+  letter-spacing: 0.01rem;
+
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1052px) {
   .contact-form__wrapper {
-    padding: 3.64rem 14.32rem;
+    padding: 2.64rem 1rem;
     background-color: #292F36;
-    border-radius: 3.18182rem;
-    margin: 9.09rem auto;
+    border-radius: 2.18182rem;
+    margin: 4.09rem auto;
   }
 
-  .main-button__color {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-
-    transition: all .3s linear;
-    margin: 0 auto;
-  }
-
-  .main-button__color:hover {
-    opacity: .7;
-  }
-
-  path {
-    stroke: #292F36;
-  }
-
-  .contact-form-title{
-    color: #FFF;
-    text-align: center;
-    font-family: "DM", serif;
+  .contact-form-title {
     font-size: 2.27273rem;
-    line-height: 125%; /* 2.84091rem */
-
-    margin-bottom: 0.5rem;
   }
 
   .contact-form-description {
-    color: #FFF;
-    text-align: center;
-    line-height: 150%;
-    letter-spacing: 0.01rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
 
-    margin-bottom: 1.5rem;
+@media (max-width: 767px) {
+  .contact-form-title {
+    font-size: 2rem;
   }
 
-  @media (max-width: 1052px) {
-    .contact-form__wrapper {
-      padding: 2.64rem 1rem;
-      background-color: #292F36;
-      border-radius: 2.18182rem;
-      margin: 4.09rem auto;
-    }
-
-    .contact-form-title{
-      font-size: 2.27273rem;
-    }
-
-    .contact-form-description {
-      font-size: 0.8rem;
-      margin-bottom: 1rem;
-    }
+  .contact-form__wrapper {
+    padding: 2rem 1rem;
+    background-color: #292F36;
+    border-radius: 2.18182rem;
+    margin: 4.09rem auto;
   }
+
+  .main-button__color {
+    padding: 1rem;
+  }
+}
 </style>

@@ -377,6 +377,36 @@
 
         <!--SECTION COUNTER (COMPONENT)-->
         <main-counter></main-counter>
+
+
+        <section class="news__wrapper">
+
+          <div class="news-content__wrapper container">
+            <div class="title-center__wrapper">
+              <h2>
+                Articles & News
+              </h2>
+              <p class="title-center__description">
+                It is a long established fact that a reader will be distracted by the of readable content <br> of a page
+                when lookings at its layouts the points of using.
+              </p>
+            </div>
+
+            <div class="news-cards__wrapper">
+              <news-cards
+                  v-for="(card, index) in newsCardsList" :key="index"
+                  :news-title="card?.newsTitle"
+                  :news-preview="card?.newsPreview"
+                  :news-preview-descripyion="card?.newsPreviewDescripyion"
+                  :news-date="card?.newsDate"
+              ></news-cards>
+
+              <div v-if="errorMessage" class="error-message__wrapper">
+                <span class="news-error">Looks like there's no news. Or there is some error, please let us know about this problem!</span>
+              </div>
+            </div>
+          </div>
+        </section>
         <!--SECTION FORM ABOVE THE FOOTER (COMPONENT)-->
         <contact-form-footer></contact-form-footer>
 
@@ -384,6 +414,10 @@
 
 
     </main>
+
+
+
+    <main-footer-component></main-footer-component>
   </div>
 </template>
 
@@ -392,10 +426,31 @@ import MainHeaderComponent from "@/components/MainHeaderComponent.vue";
 import LinesLanding from "@/components/LinesLanding.vue";
 import ContactFormFooter from "@/components/ContactFormFooter.vue";
 import MainCounter from "@/components/MainCounter.vue";
+import NewsCards from "@/components/NewsCards.vue";
+import MainFooterComponent from "@/components/MainFooterComponent.vue";
 
 export default {
   name: "HomePage",
-  components: {MainCounter, ContactFormFooter, LinesLanding, MainHeaderComponent}
+  components: {MainFooterComponent, NewsCards, MainCounter, ContactFormFooter, LinesLanding, MainHeaderComponent},
+  data() {
+    return {
+      newsCardsList: [],
+
+      errorMessage: false
+    }
+  },
+  methods: {},
+  beforeMount() {
+    fetch("https://res.cloudinary.com/dui2dgzj2/raw/upload/v1692894656/news_e7hwpc.json")
+        .then(res => res.json())
+        .then(data => this.newsCardsList = data)
+
+    // console.log(this.newsCardsList.length)
+    // if (!this.newsCardsList.length || this.newsCardsList.length === 0) {
+    //   this.errorMessage = true
+    // }
+    // this.errorMessage = false
+  }
 }
 </script>
 
@@ -782,6 +837,21 @@ export default {
   filter: blur(5px);
 }
 
+.news-cards__wrapper {
+  display: flex;
+}
+
+.error-message__wrapper {
+  margin: 0 auto;
+
+}
+
+.news-error {
+  font-family: 'DM Serif Display', serif;
+  color: #cc3030;
+  text-align: center;
+}
+
 @media (max-width: 1052px) {
   .intro-wrapper__content {
     padding: 10.625rem 0.625rem 10.563rem;
@@ -923,5 +993,11 @@ export default {
   .info-link {
     font-size: 0.727rem;
   }
+
+  .news-cards__wrapper {
+    flex-direction: column;
+  }
+
+
 }
 </style>

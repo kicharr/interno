@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-ExtraLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("@/assets/fonts/Jost/Jost-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "DM";
+    src: url("@/assets/fonts/DM/DMSerifDisplay-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+*, * + *, *:after, *:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    box-sizing: inherit;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    padding: 0;
+    color: #292F36;
+}
+
+h1 {
+    font-size: 2.95455rem;
+    text-align: c;
+}
+
+h2 {
+    font-size: 2.27273rem;
+}
+
+ul, ol, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 55.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0.625rem;
+}
+
+
+svg, circle, path {
+    transition: all .3s linear;
+}
+
+
+@media (max-width: 475px) {
+    html {
+        font-size: 18px;
+    }
+}
+

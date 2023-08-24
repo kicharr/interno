@@ -34,7 +34,7 @@
           </p>
           <ul class="nav-list">
             <li>
-              <a href="#" class="nav-link">About Us</a>
+              <router-link to="/about" class="nav-link">About Us</router-link>
             </li>
             <li>
               <a href="#" class="nav-link">

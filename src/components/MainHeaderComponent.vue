@@ -14,7 +14,7 @@
         <nav class="header-link__wrapper">
           <ul class="header-link__list">
             <li>
-              <router-link class="header-link" to="#">Home</router-link>
+              <router-link class="header-link" to="/about">About Us</router-link>
             </li>
             <li>
               <router-link class="header-link" to="#">Pages</router-link>

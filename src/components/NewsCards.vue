@@ -31,6 +31,7 @@
 </template>
 
 <script>
+
 export default {
   name: "NewsCards",
   props: ["newsPreview", "newsPreviewDescripyion", "newsTitle", "newsDate"]

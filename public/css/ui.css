@@ -22,6 +22,18 @@
 }
 
 
+.main-button {
+    transition: all .3s linear;
+}
+
+.main-button:hover {
+    background-color: #CDA274;
+}
+
+.main-button:hover path {
+    stroke: #292F36;
+}
+
 
 .main-button__large {
 

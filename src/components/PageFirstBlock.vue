@@ -53,4 +53,15 @@ export default {
   color: #4D5053;
   letter-spacing: 0.01rem;
 }
+
+@media (max-width: 747px) {
+  .first-block__content {
+    max-width: 15rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .page-title__wrapper h1 {
+    font-size: 2rem;
+  }
+}
 </style>

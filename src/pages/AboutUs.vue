@@ -148,7 +148,7 @@
 
             <div class="people-card">
               <div class="people-preview">
-                <img src="../assets/about-us/people-list-1.png" class="people-preview__img" alt="Human">
+                <img src="../assets/about-us/people-list-2.png" class="people-preview__img" alt="Human">
               </div>
 
               <div class="people-description">
@@ -229,7 +229,7 @@
 
             <div class="people-card">
               <div class="people-preview">
-                <img src="../assets/about-us/people-list-1.png" class="people-preview__img" alt="Human">
+                <img src="../assets/about-us/people-list-3.png" class="people-preview__img" alt="Human">
               </div>
 
               <div class="people-description">
@@ -269,6 +269,36 @@
 
           </div>
         </div>
+
+      </section>
+
+
+      <section class="creative-form container">
+        <p class="title-center">
+          Creative project? Let's have <br>
+          a productive talk.
+        </p>
+
+
+        <div class="creative-form__int">
+          <div class="inputs-wrapper">
+            <input type="text" placeholder="Name" class="input input__name">
+
+            <input type="text" placeholder="Email" class="input input__email">
+          </div>
+
+          <textarea class="input input__message" placeholder="Hello Iam Intrested in.." maxlength="500"
+                    rows="4"></textarea>
+        </div>
+
+        <button class="main-button main-button__form">
+          Send Now
+          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
+                  stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
 
       </section>
     </div>
@@ -388,7 +418,6 @@ export default {
 
 .services-card__img {
   display: inline-flex;
-//overflow: hidden; //flex-basis: 60%;
 }
 
 .services-card__title {
@@ -452,6 +481,7 @@ export default {
 .people-list__wrapper {
   background-color: #F4F0EC;
   padding: 8.41rem 0 8.36rem;
+  margin-bottom: 9.68rem;
 }
 
 .people-list-title__wrapper h2 {
@@ -461,6 +491,8 @@ export default {
 
   line-height: 125%; /* 2.84091rem */
   letter-spacing: 0.04545rem;
+
+  margin-bottom: 1.28rem;
 }
 
 .people-cards__wrapper {
@@ -483,8 +515,7 @@ export default {
   visibility: hidden;
   border-radius: 1.364rem;
   transition: all .3s linear;
-  //transform: translateY(100%);
-  position: absolute;
+//transform: translateY(100%); position: absolute;
   top: 0;
   left: 0;
 
@@ -508,9 +539,8 @@ export default {
   border-radius: 1.364rem;
 }
 
-.people-card:hover .people-description  {
-  //transform: translateY(0);
-  opacity:.8;
+.people-card:hover .people-description {
+//transform: translateY(0); opacity: 1;
   visibility: visible;
 }
 
@@ -521,17 +551,23 @@ export default {
 .social-links__wrapper {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .social-links__wrapper img {
   display: flex;
 }
 
+.links-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-email, .contact-phone {
+  display: inline-block;
   color: #4D5053;
   text-align: center;
   font-size: 0.81818rem;
-  display: inline-block;
   line-height: 150%; /* 1.22727rem */
   letter-spacing: 0.00818rem;
   transition: all .3s linear;
@@ -544,6 +580,88 @@ export default {
 .contact-phone:hover {
   opacity: .7;
 }
+
+.people-description__name {
+  color: #292F36;
+  text-align: center;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 900;
+  font-size: 1.13636rem;
+  line-height: 150%;
+  letter-spacing: 0.01136rem;
+}
+
+.people-description__text {
+  color: #4D5053;
+  font-size: 0.81818rem;
+  line-height: 150%;
+  letter-spacing: 0.00818rem;
+}
+
+.social__link {
+  transition: all .3s linear;
+}
+
+.social__link:hover {
+  transform: scale(1.2);
+}
+
+.creative-form {
+  margin-bottom: 6.14rem;
+}
+
+.title-center {
+  color: #292F36;
+  text-align: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.27273rem;
+  font-weight: 900;
+  line-height: 125%;
+  letter-spacing: 0.04545rem;
+  margin-bottom: 3.5rem;
+}
+
+.inputs-wrapper {
+  display: flex;
+  gap: 1.82rem;
+  margin-bottom: 2.59rem;
+}
+
+.input {
+  display: inline-block;
+  width: 100%;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.04545rem solid #000000;
+
+  color: #4D5053;
+  font-size: 1rem;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: 0.01rem;
+}
+
+
+.input:focus-visible {
+  outline: none;
+}
+
+.input__name, .input__email {
+  padding-bottom: 0.59rem;
+}
+
+.input__message {
+  resize: none;
+}
+
+.creative-form__int {
+  margin-bottom: 3.5rem;
+}
+
+.main-button {
+  margin: 0 auto;
+}
+
 
 @media (max-width: 1024px) {
   .citation-content:after {
@@ -574,8 +692,35 @@ export default {
     margin-bottom: 0.3rem;
   }
 
-  .main-button {
+  .main-button__form {
     margin: 0 auto;
+  }
+
+  .people-cards__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 475px) {
+  .people-card {
+    max-width: 10rem;
+    width: 100%;
+  }
+  .title-center {
+    font-size: 1.5rem;
+  }
+  .inputs-wrapper {
+    flex-direction: column;
+  }
+
+  .people-preview__img img {
+    max-height: 3rem;
+    height:  100%;
+  }
+
+  .citation__wrapper  {
+    margin: 5.91rem auto 3.26rem;
   }
 }
 </style>

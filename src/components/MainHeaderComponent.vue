@@ -17,13 +17,13 @@
               <router-link class="header-link" to="/about">About Us</router-link>
             </li>
             <li>
-              <router-link class="header-link" to="#">Pages</router-link>
+              <router-link class="header-link" to="/pricing">Pricing</router-link>
             </li>
             <li>
               <router-link class="header-link" to="/services/services-page">Services</router-link>
             </li>
             <li>
-              <router-link class="header-link" to="#">Project</router-link>
+              <router-link class="header-link" to="/project">Project</router-link>
             </li>
             <li>
               <router-link class="header-link" to="#">Blog</router-link>
@@ -44,13 +44,13 @@
                 <router-link class=" header-link__burger" to="/about">About Us</router-link>
               </li>
               <li>
-                <router-link class=" header-link__burger" to="#">Pages</router-link>
+                <router-link class=" header-link__burger" to="/pricing">Pricing</router-link>
               </li>
               <li>
                 <router-link class=" header-link__burger" to="/services/services-page">Services</router-link>
               </li>
               <li>
-                <router-link class=" header-link__burger" to="#">Project</router-link>
+                <router-link class=" header-link__burger" to="/project">Project</router-link>
               </li>
               <li>
                 <router-link class="header-link__burger" to="#">Blog</router-link>

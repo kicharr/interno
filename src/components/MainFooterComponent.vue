@@ -37,19 +37,14 @@
               <router-link to="/about" class="nav-link">About Us</router-link>
             </li>
             <li>
-              <a href="#" class="nav-link">
-                Our Projects
-              </a>
+              <router-link class="nav-link" to="/pricing">Pricing</router-link>
             </li>
             <li>
-              <a href="#" class="nav-link">Our Team
-              </a>
+              <router-link class="nav-link" to="/services/services-page">Services</router-link>
             </li>
             <li>
-              <a href="#" class="nav-link">Contact Us
-              </a>
+              <router-link class="nav-link" to="/project">Project</router-link>
             </li>
-
             <li>
               <router-link to="/services/services-page" class="nav-link">About Us</router-link>
             </li>
@@ -65,8 +60,7 @@
               <a href="#" class="nav-link">Kitchan</a>
             </li>
             <li>
-              <a href="#" class="nav-link">
-                Bedroom</a>
+              <router-link class="nav-link" to="/services/project-plan">Project plan</router-link>
             </li>
             <li>
               <a href="#" class="nav-link">Living Area

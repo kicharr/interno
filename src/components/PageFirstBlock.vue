@@ -54,6 +54,10 @@ export default {
   letter-spacing: 0.01rem;
 }
 
+h1 {
+  font-size: 2.27273rem;
+}
+
 @media (max-width: 747px) {
   .first-block__content {
     max-width: 15rem;

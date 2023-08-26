@@ -31,7 +31,7 @@ export default {
 
   max-width: 22.86364rem;
   width: 100%;
-  padding: 1.86364rem 4rem;
+  padding: 1.86364rem 3.6rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -63,5 +63,22 @@ export default {
   .page-title__wrapper h1 {
     font-size: 2rem;
   }
+}
+
+@media (max-width: 475px) {
+  .first-block__content {
+    max-width: 15rem;
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .breadcrumbs__link {
+    font-size: .7rem;
+  }
+
+  .page-title__wrapper h1 {
+    font-size: 1.5rem;
+  }
+
 }
 </style>

@@ -20,7 +20,7 @@
               <router-link class="header-link" to="#">Pages</router-link>
             </li>
             <li>
-              <router-link class="header-link" to="#">Services</router-link>
+              <router-link class="header-link" to="/services/services-page">Services</router-link>
             </li>
             <li>
               <router-link class="header-link" to="#">Project</router-link>
@@ -41,13 +41,13 @@
             </a>
             <ul v-if="burgerLinksList" class=" header-link-list__burger">
               <li>
-                <router-link class=" header-link__burger" to="#">Home</router-link>
+                <router-link class=" header-link__burger" to="/about">About Us</router-link>
               </li>
               <li>
                 <router-link class=" header-link__burger" to="#">Pages</router-link>
               </li>
               <li>
-                <router-link class=" header-link__burger" to="#">Services</router-link>
+                <router-link class=" header-link__burger" to="/services/services-page">Services</router-link>
               </li>
               <li>
                 <router-link class=" header-link__burger" to="#">Project</router-link>

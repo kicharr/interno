@@ -51,8 +51,7 @@
             </li>
 
             <li>
-              <a href="#" class="nav-link">Services
-              </a>
+              <router-link to="/services/services-page" class="nav-link">About Us</router-link>
             </li>
 
           </ul>
@@ -100,14 +99,18 @@
         <a href="tel:(123) 456 - 7890" class="contact-phone">(123) 456 - 7890</a>
       </div>
     </div>
+
+    <div class="footer-desc container">
+      <span class="footer-desc__text">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</span>
+    </div>
   </footer>
 </template>
 
 <script>
-import {defineComponent} from 'vue'
 
-export default defineComponent({
-  name: "MainFooterComponent"
+
+export default ({
+  name: "MainFooterComponent",
 })
 </script>
 
@@ -115,6 +118,7 @@ export default defineComponent({
 .footer-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 6.09rem;
 }
 
 .footer-logo__link {
@@ -198,12 +202,24 @@ export default defineComponent({
   opacity: .7;
 }
 
+.footer-desc {
+  text-align: center;
+  padding: 1.89rem 2.09rem;
+}
+
+.footer-desc__text {
+  color: #4D5053;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: 0.01rem;
+}
+
 @media (max-width: 767px) {
   .footer-content {
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
+
   .footer-social-links__wrapper {
     justify-content: center;
   }
@@ -226,5 +242,52 @@ export default defineComponent({
     transition: all .3s linear;
   }
 
+  .footer-content {
+    margin-bottom: 3rem;
+  }
+
+  .footer-desc__text {
+    font-size: .9rem;
+  }
+
+}
+
+@media (max-width: 475px) {
+  .footer-content {
+    margin: 0;
+  }
+
+  .logo-description__text {
+    font-size: .8rem;
+  }
+
+  .footer-social-links__wrapper {
+    margin: 1.5rem 0;
+  }
+
+  .nav-title {
+    font-size: 1.5rem;
+  }
+
+  .address {
+    font-size: .7rem;
+  }
+
+  .contact-email, .contact-phone {
+    font-size: .7rem;
+  }
+
+  .nav-column__wrapper {
+    margin-bottom: .5rem;
+  }
+
+  .footer-desc__text {
+    font-size: .5rem;
+  }
+
+  .footer-desc {
+    text-align: center;
+    padding: 1rem 1.5rem;
+  }
 }
 </style>

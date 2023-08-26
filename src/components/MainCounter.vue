@@ -132,7 +132,9 @@ export default {
 
   .counter-separator__wrapper {
     margin: 0 2rem;
-
+  }
+  .counter-box__description {
+    font-size: .8rem;
   }
 }
 </style>

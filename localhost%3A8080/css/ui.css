@@ -1,0 +1,65 @@
+.main-button {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.61818rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.01636rem;
+    padding: 1.18rem 2.18rem;
+    border-radius: 0.81818rem;
+    box-shadow: 0 0.625rem 1.25rem 0 rgba(192, 192, 192, 0.35);
+    transition: all .3s linear;
+    background-color: #292F36;
+}
+
+
+.main-button {
+    transition: all .3s linear;
+}
+
+.main-button:hover {
+    background-color: #CDA274;
+}
+
+.main-button:hover path {
+    stroke: #292F36;
+}
+
+
+.main-button__large {
+
+}
+
+.main-button__color {
+    color: #FFF;
+    text-align: center;
+    font-size: 0.81818rem;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.01636rem;
+
+    display: flex;
+    padding: 1.18182rem 1.68182rem;
+    align-items: center;
+    gap: 0.45455rem;
+
+    border-radius: 0.81818rem;
+    background: #CDA274;
+    box-shadow: 0 0.455rem 0.909rem 0 #1F2022;
+}
+
+
+
+@media (max-width: 1052px) {
+
+
+}
+
+@media (max-width: 475px) {
+
+}

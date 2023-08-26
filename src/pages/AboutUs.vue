@@ -535,6 +535,10 @@ export default {
 
 
 .people-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   overflow: hidden;
   border-radius: 1.364rem;
 }
@@ -658,7 +662,7 @@ export default {
   margin-bottom: 3.5rem;
 }
 
-.main-button {
+.main-button__form {
   margin: 0 auto;
 }
 

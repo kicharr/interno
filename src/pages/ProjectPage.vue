@@ -8,13 +8,21 @@
 
 
     <div class="page-control__wrapper container">
-      <button @click="checkProjectWrapper" class="controller-button active">Bathroom</button>
-      <button @click="checkProjectWrapper" class="controller-button">Bed Room</button>
-      <button @click="checkProjectWrapper" class="controller-button">Kitchan</button>
-      <button @click="checkProjectWrapper" class="controller-button">Living Area</button>
+      <button @click="currentViewRoom='bathroom'" class="controller-button "
+              :class="{'active':currentViewRoom==='bathroom'}">Bathroom
+      </button>
+      <button @click="currentViewRoom='badroom'" class="controller-button"
+              :class="{'active':currentViewRoom==='badroom'}">Bed Room
+      </button>
+      <button @click="currentViewRoom='kitchan'" class="controller-button"
+              :class="{'active':currentViewRoom==='kitchan'}">Kitchan
+      </button>
+      <button @click="currentViewRoom='livingarea'" class="controller-button"
+              :class="{'active':currentViewRoom==='livingarea'}">Living Area
+      </button>
     </div>
 
-    <div v-if="contentWrappers.bathroomWrapper" class="bathroom__wrapper container">
+    <div v-if="currentViewRoom==='bathroom'" class="bathroom__wrapper container">
 
       <div class="project-card-column project-card-column__left">
         <div class="project-card project-card__big">
@@ -247,7 +255,7 @@
       </div>
 
     </div>
-    <div v-if="contentWrappers.bedRoomWrapper" class="bathroom__wrapper container">
+    <div v-if="currentViewRoom==='badroom'" class="bathroom__wrapper container">
 
       <div class="project-card-column project-card-column__left">
         <div class="project-card project-card__small">
@@ -312,7 +320,7 @@
       </div>
 
     </div>
-    <div v-if="contentWrappers.kitchanWrapper" class="bathroom__wrapper container">
+    <div v-if="currentViewRoom==='kitchan'" class="bathroom__wrapper container">
 
       <div class="project-card-column project-card-column__left">
         <div class="project-card project-card__big">
@@ -406,7 +414,7 @@
       </div>
 
     </div>
-    <div v-if="contentWrappers.livingAreaWrapper" class="bathroom__wrapper container">
+    <div v-if="currentViewRoom==='livingarea'" class="bathroom__wrapper container">
 
       <div class="project-card-column project-card-column__left">
 
@@ -522,75 +530,13 @@ export default {
     return {
       pageTitle: "Our project",
       currentWrapper: [],
-      contentWrappers: {
-        bathroomWrapper: true,
-        bedRoomWrapper: false,
-        kitchanWrapper: false,
-        livingAreaWrapper: false
-      },
+      currentViewRoom: 'bathroom',
 
-      // contentWrappers: [
-      //   {
-      //     bathroomWrapper: true,
-      //   },
-      //   {
-      //     bedRoomWrapper: false,
-      //   },
-      //   {
-      //     kitchanWrapper: false,
-      //   },
-      //   {
-      //     livingAreaWrapper: false
-      //   }
-      // ],
       bathroomClass: "Bathroom",
     }
   },
-  methods: {
-    checkProjectWrapper() {
 
-      let initiallyActiveButton = document.querySelector('.controller-button.active');
-      initiallyActiveButton ? initiallyActiveButton.classList.remove('active') : null
-
-      const buttons = document.querySelectorAll('.controller-button');
-      buttons.forEach(function (button) {
-        button.addEventListener('click', function () {
-          buttons.forEach(function (btn) {
-            btn.classList.remove('active');
-          });
-          this.classList.add('active');
-        });
-      });
-
-      switch (event.target.innerHTML) {
-        case 'Bathroom':
-          this.contentWrappers.bathroomWrapper = true;
-          this.contentWrappers.bedRoomWrapper = false;
-          this.contentWrappers.kitchanWrapper = false;
-          this.contentWrappers.livingAreaWrapper = false;
-          break;
-        case 'Bed Room':
-          this.contentWrappers.bathroomWrapper = false;
-          this.contentWrappers.bedRoomWrapper = true;
-          this.contentWrappers.kitchanWrapper = false;
-          this.contentWrappers.livingAreaWrapper = false;
-          break;
-        case 'Kitchan':
-          this.contentWrappers.bathroomWrapper = false;
-          this.contentWrappers.bedRoomWrapper = false;
-          this.contentWrappers.kitchanWrapper = true;
-          this.contentWrappers.livingAreaWrapper = false;
-          break;
-        case 'Living Area':
-          this.contentWrappers.bathroomWrapper = false;
-          this.contentWrappers.bedRoomWrapper = false;
-          this.contentWrappers.kitchanWrapper = false;
-          this.contentWrappers.livingAreaWrapper = true;
-          break;
-      }
-
-    }
-  },
+  methods: {},
   mounted() {
 
   }

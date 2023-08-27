@@ -37,9 +37,9 @@
         <div class="mobile-menu__wrapper">
           <div class="header-link__burger">
             <a @click="showBurgerLinksList" class="header-link-burger__btn" href="#">
-              <span class="burger-link__span"></span>
+              <span id="burgerLink" class="burger-link__span"></span>
             </a>
-            <ul v-if="burgerLinksList" class=" header-link-list__burger">
+            <ul id="burger" class="header-link-list__burger">
               <li>
                 <router-link class=" header-link__burger" to="/about">About Us</router-link>
               </li>
@@ -80,18 +80,22 @@ export default {
   name: 'MainHeaderComponent',
   data() {
     return {
-      burgerLinksList: false
+      // burgerLinksList: false
     }
   },
   methods: {
     showBurgerLinksList() {
-      this.burgerLinksList = this.burgerLinksList === false;
+      const burger = document.getElementById('burger');
+      const burgerLink = document.getElementById('burgerLink');
 
-      // if(this.burgerLinksList === true) {
-      //   document.getElementById('test').style.cssText= 'height: 0'
-      // } else {
-      //   document.getElementById('test').style.cssText= 'height: 3px'
-      // }
+      console.log(burger.className)
+      if (burger.className == "header-link-list__burger") {
+        burger.classList.add("burger-active")
+        burgerLink.classList.add('burger-link-span__close');
+      } else {
+        burger.classList.remove("burger-active");
+        burgerLink.classList.remove('burger-link-span__close');
+      }
     }
   }
 }
@@ -108,14 +112,19 @@ export default {
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: rgba(208, 163, 115, 0.9);
+  background-color: beige;
   min-width: 100dvw;
   width: 100%;
-  padding: 4rem 0 3rem;
+  padding: 4rem 2rem 3rem;
+  border-radius: 0 0 1rem 1rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  transition: all .3s linear;
+  transform: translateY(-100%);
+}
+
+.burger-active {
+  transform: translateY(0);
 }
 
 .header-link-list__burger li {
@@ -201,6 +210,8 @@ export default {
 
   position: relative;
   border-radius: 0.227rem;
+
+
 }
 
 .burger-link__span:after {
@@ -214,6 +225,7 @@ export default {
   top: -0.327rem;
   left: 0;
   border-radius: 0.227rem;
+  transition: all .3s linear;
 }
 
 .burger-link__span:before {
@@ -227,6 +239,22 @@ export default {
   top: 0.327rem;
   left: 0;
   border-radius: 0.227rem;
+  transition: all .3s linear;
+}
+
+
+.burger-link-span__close {
+  background: transparent;
+}
+
+.burger-link-span__close:after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger-link-span__close:before {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .header-link-burger__btn {

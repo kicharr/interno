@@ -26,7 +26,7 @@
               <router-link class="header-link" to="/project">Project</router-link>
             </li>
             <li>
-              <router-link class="header-link" to="#">Blog</router-link>
+              <router-link class="header-link" to="/news">News</router-link>
             </li>
             <li>
               <router-link class="header-link" to="#">Contact</router-link>
@@ -53,7 +53,7 @@
                 <router-link class=" header-link__burger" to="/project">Project</router-link>
               </li>
               <li>
-                <router-link class="header-link__burger" to="#">Blog</router-link>
+                <router-link class="header-link__burger" to="/news">News</router-link>
               </li>
               <li>
                 <router-link class=" header-link__burger" to="#">Contact</router-link>

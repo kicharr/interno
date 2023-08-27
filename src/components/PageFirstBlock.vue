@@ -55,7 +55,7 @@ export default {
 }
 
 h1 {
-  font-size: 2.27273rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 747px) {

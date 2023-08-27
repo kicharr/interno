@@ -7,6 +7,7 @@ import ServicesWrapper from "@/pages/ServicesWrapper.vue";
 import PricingPage from "@/pages/PricingPage.vue";
 import ProjectPage from "@/pages/ProjectPage.vue";
 import SeparateProjectPage from "@/pages/SeparateProjectPage.vue";
+import NewsPage from "@/pages/NewsPage.vue";
 
 
 // creating routes to all pages
@@ -52,6 +53,11 @@ const routes = [
         path: '/separate-project-page',
         name: 'SeparateProjectPage',
         component: SeparateProjectPage
+    },
+    {
+        path: '/news',
+        name: 'news',
+        component: NewsPage
     },
 
     // {

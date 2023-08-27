@@ -352,7 +352,7 @@
               <div class="project-preview__wrapper">
                 <img src="../assets/home-page/Modern-Kitchan-4.png" alt="Modern Kitchen">
 
-                <div class="project-preview__modal">
+                <div class="project-prfeview__modal">
                   <p class="project-preview-modal__description">Quis autem vel eum iure reprehenderit qui in ea
                     voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
                     nulla pariatur?</p>
@@ -435,7 +435,6 @@ export default {
   data() {
     return {
       newsCardsList: [],
-
       errorMessage: false
     }
   },
@@ -444,12 +443,6 @@ export default {
     fetch("https://res.cloudinary.com/dui2dgzj2/raw/upload/v1692894656/news_e7hwpc.json")
         .then(res => res.json())
         .then(data => this.newsCardsList = data)
-
-    // console.log(this.newsCardsList.length)
-    // if (!this.newsCardsList.length || this.newsCardsList.length === 0) {
-    //   this.errorMessage = true
-    // }
-    // this.errorMessage = false
   }
 }
 </script>

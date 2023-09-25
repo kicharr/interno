@@ -8,6 +8,7 @@ import PricingPage from "@/pages/PricingPage.vue";
 import ProjectPage from "@/pages/ProjectPage.vue";
 import SeparateProjectPage from "@/pages/SeparateProjectPage.vue";
 import NewsPage from "@/pages/NewsPage.vue";
+import ErrorPage from "@/pages/ErrorPage";
 
 
 // creating routes to all pages
@@ -58,6 +59,11 @@ const routes = [
         path: '/news',
         name: 'news',
         component: NewsPage
+    },
+    {
+        path: '/404',
+        name: 'error',
+        component: ErrorPage
     },
 
     // {

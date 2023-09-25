@@ -20,7 +20,7 @@
                 Get Started
                 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
-                        stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
                 </svg>
               </button>
             </div>
@@ -43,7 +43,7 @@
                 Read More
                 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
-                        stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
                 </svg>
               </a>
             </div>
@@ -63,7 +63,7 @@
                 Read More
                 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
-                        stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
                 </svg>
               </a>
             </div>
@@ -82,9 +82,9 @@
               <a href="#" class="info-link">
                 Read More
                 <svg class="info-link__arrow" width="19" height="17" viewBox="0 0 19 17" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
-                        stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
                 </svg>
               </a>
             </div>
@@ -108,10 +108,10 @@
             </div>
             <div class="create-info-number__wrapper">
               <svg width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="46.5" cy="46.5" r="46.5" fill="#F4F0EC"/>
+                <circle cx="46.5" cy="46.5" r="46.5" fill="#F4F0EC" />
                 <path
-                    d="M61.0012 55.0749C59.7796 53.8442 56.8211 52.0482 55.3857 51.3243C53.5164 50.3828 53.3625 50.3059 51.8933 51.3974C50.9133 52.1258 50.2617 52.7766 49.1148 52.532C47.9678 52.2874 45.4754 50.9082 43.2931 48.7329C41.1107 46.5576 39.6514 43.9931 39.4061 42.8501C39.1607 41.7071 39.8222 41.0632 40.5438 40.081C41.5607 38.6964 41.4838 38.4657 40.6145 36.5965C39.9368 35.1427 38.0883 32.2121 36.8529 30.9967C35.5313 29.6914 35.5313 29.9222 34.6798 30.276C33.9865 30.5677 33.3214 30.9222 32.6928 31.3352C31.462 32.1529 30.7789 32.8321 30.3012 33.8528C29.8235 34.8735 29.6089 37.2665 32.0759 41.7478C34.5429 46.2292 36.2737 48.5206 39.8561 52.0928C43.4385 55.6649 46.1931 57.5856 50.2202 59.844C55.2018 62.6339 57.1126 62.09 58.1365 61.6131C59.1604 61.1362 59.8427 60.4593 60.662 59.2286C61.076 58.6011 61.4314 57.9368 61.7235 57.2441C62.0781 56.3957 62.3089 56.3957 61.0012 55.0749Z"
-                    stroke="#CDA274" stroke-width="2" stroke-miterlimit="10"/>
+                  d="M61.0012 55.0749C59.7796 53.8442 56.8211 52.0482 55.3857 51.3243C53.5164 50.3828 53.3625 50.3059 51.8933 51.3974C50.9133 52.1258 50.2617 52.7766 49.1148 52.532C47.9678 52.2874 45.4754 50.9082 43.2931 48.7329C41.1107 46.5576 39.6514 43.9931 39.4061 42.8501C39.1607 41.7071 39.8222 41.0632 40.5438 40.081C41.5607 38.6964 41.4838 38.4657 40.6145 36.5965C39.9368 35.1427 38.0883 32.2121 36.8529 30.9967C35.5313 29.6914 35.5313 29.9222 34.6798 30.276C33.9865 30.5677 33.3214 30.9222 32.6928 31.3352C31.462 32.1529 30.7789 32.8321 30.3012 33.8528C29.8235 34.8735 29.6089 37.2665 32.0759 41.7478C34.5429 46.2292 36.2737 48.5206 39.8561 52.0928C43.4385 55.6649 46.1931 57.5856 50.2202 59.844C55.2018 62.6339 57.1126 62.09 58.1365 61.6131C59.1604 61.1362 59.8427 60.4593 60.662 59.2286C61.076 58.6011 61.4314 57.9368 61.7235 57.2441C62.0781 56.3957 62.3089 56.3957 61.0012 55.0749Z"
+                  stroke="#CDA274" stroke-width="2" stroke-miterlimit="10" />
               </svg>
 
               <div class="info-number__wrapper">
@@ -124,7 +124,7 @@
               <button class="main-button main-button__create">Get Free Estimate
                 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
-                        stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
                 </svg>
               </button>
 
@@ -278,7 +278,8 @@
                     egestas.
                     <br> Vivamus in dolor venenatis, dictum lectus quis, mattis risus. Morbi auctor neque ante, volutpat
                     molestie lacus luctus sit amet. Pellentesque id mollis massa, ut posuere nisl. Morbi euismod risus
-                    quam, et feugiat eros lacinia ac. Nulla lobortis ultricies libero sed lacinia.</p>
+                    quam, et feugiat eros lacinia ac. Nulla lobortis ultricies libero sed lacinia.
+                  </p>
                 </div>
               </div>
 
@@ -352,7 +353,7 @@
               <div class="project-preview__wrapper">
                 <img src="../assets/home-page/Modern-Kitchan-4.png" alt="Modern Kitchen">
 
-                <div class="project-prfeview__modal">
+                <div class="project-preview__modal">
                   <p class="project-preview-modal__description">Quis autem vel eum iure reprehenderit qui in ea
                     voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
                     nulla pariatur?</p>
@@ -393,16 +394,13 @@
             </div>
 
             <div class="news-cards__wrapper">
-              <news-cards
-                  v-for="(card, index) in newsCardsList" :key="index"
-                  :news-title="card?.newsTitle"
-                  :news-preview="card?.newsPreview"
-                  :news-preview-descripyion="card?.newsPreviewDescripyion"
-                  :news-date="card?.newsDate"
-              ></news-cards>
+              <news-cards v-for="(card, index) in newsCardsList" :key="index" :news-title="card?.newsTitle"
+                :news-preview="card?.newsPreview" :news-preview-descripyion="card?.newsPreviewDescripyion"
+                :news-date="card?.newsDate"></news-cards>
 
               <div v-if="errorMessage" class="error-message__wrapper">
-                <span class="news-error">Looks like there's no news. Or there is some error, please let us know about this problem!</span>
+                <span class="news-error">Looks like there's no news. Or there is some error, please let us know about this
+                  problem!</span>
               </div>
             </div>
           </div>
@@ -431,7 +429,7 @@ import MainFooterComponent from "@/components/MainFooterComponent.vue";
 
 export default {
   name: "HomePage",
-  components: {MainFooterComponent, NewsCards, MainCounter, ContactFormFooter, LinesLanding, MainHeaderComponent},
+  components: { MainFooterComponent, NewsCards, MainCounter, ContactFormFooter, LinesLanding, MainHeaderComponent },
   data() {
     return {
       newsCardsList: [],
@@ -441,8 +439,8 @@ export default {
   methods: {},
   beforeMount() {
     fetch("https://res.cloudinary.com/dui2dgzj2/raw/upload/v1692894656/news_e7hwpc.json")
-        .then(res => res.json())
-        .then(data => this.newsCardsList = data)
+      .then(res => res.json())
+      .then(data => this.newsCardsList = data)
   }
 }
 </script>
@@ -588,7 +586,7 @@ export default {
 .create-info-description__text {
   color: #4D5053;
   line-height: 150%;
-//letter-spacing: 0.00rem;
+  letter-spacing: 0.00rem;
 }
 
 .create-info-number__wrapper {
@@ -639,7 +637,8 @@ export default {
 .reviews-title__wrapper h2 {
   text-align: center;
   font-size: 2.27273rem;
-  line-height: 125%; /* 2.84091rem */
+  line-height: 125%;
+  /* 2.84091rem */
   letter-spacing: 0.04545rem;
 }
 
@@ -677,7 +676,8 @@ export default {
   font-size: 1.13636rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 1.70455rem */
+  line-height: 150%;
+  /* 1.70455rem */
   letter-spacing: 0.01136rem;
 }
 
@@ -690,7 +690,8 @@ export default {
 
 .reviews-user-description__text {
   color: #4D5053;
-  line-height: 150%; /* 1.5rem */
+  line-height: 150%;
+  /* 1.5rem */
   letter-spacing: 0.01rem;
 }
 
@@ -769,7 +770,7 @@ export default {
 
   transition: all .3s linear;
 
-//filter: blur(5px);
+  filter: blur(5px);
 }
 
 .project-preview-modal__description {
@@ -819,7 +820,8 @@ export default {
 }
 
 .project-card:hover .project-card-link {
-//background-color: red; transform: rotate(-45deg);
+  background-color: red;
+  transform: rotate(-45deg);
 }
 
 .project-card:hover .project-preview__modal {
